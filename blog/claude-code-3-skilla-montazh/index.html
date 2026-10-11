@@ -35,25 +35,52 @@
       "mainEntityOfPage": "https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/",
       "url": "https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/",
       "image": "https://mgromov688-boop.github.io/assets/aureus_logo_final_1254.png",
-      "author": {
-        "@type": "Organization",
-        "@id": "https://mgromov688-boop.github.io/#org",
-        "name": "AUREUS | Нейросети",
-        "url": "https://mgromov688-boop.github.io/"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "@id": "https://mgromov688-boop.github.io/#org",
-        "name": "AUREUS | Нейросети",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://mgromov688-boop.github.io/assets/aureus_logo_final_1254.png"
-        }
-      },
+      "author": {"@type": "Organization", "@id": "https://mgromov688-boop.github.io/#org", "name": "AUREUS | Нейросети"},
+      "publisher": {"@type": "Organization", "@id": "https://mgromov688-boop.github.io/#org", "name": "AUREUS | Нейросети"},
+      "video": {"@id": "https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/#video"},
       "isPartOf": {
         "@type": "Blog",
         "@id": "https://mgromov688-boop.github.io/blog/#blog"
       }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://mgromov688-boop.github.io/#org",
+      "name": "AUREUS | Нейросети",
+      "alternateName": "aureus_ai_hub",
+      "url": "https://mgromov688-boop.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mgromov688-boop.github.io/assets/aureus_logo_final_1254.png",
+        "width": 1254,
+        "height": 1254
+      },
+      "sameAs": [
+        "https://t.me/aureus_ai_hub",
+        "https://www.instagram.com/aureus_ai_hub/",
+        "https://www.tiktok.com/@aureus_ai_hub",
+        "https://www.youtube.com/@aureus_ai_hub",
+        "https://www.youtube.com/channel/UCxvb_2dgvJiUAKXavV8NHvQ",
+        "https://www.threads.com/@aureus_ai_hub",
+        "https://t.me/MaximToshaBot"
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/#video",
+      "name": "Claude Code и 3 скилла с GitHub забрали работу монтажёра",
+      "description": "Claude Code и три скилла с GitHub (HyperFrames, Remotion, video-shotcraft) собрали рилс без ручной склейки. Как устроена связка и где был затык.",
+      "thumbnailUrl": [
+        "https://i.ytimg.com/vi/DaFRSNGBYnE/hqdefault.jpg",
+        "https://i.ytimg.com/vi/DaFRSNGBYnE/maxresdefault.jpg"
+      ],
+      "uploadDate": "2026-10-11",
+      "inLanguage": "ru",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/DaFRSNGBYnE",
+      "contentUrl": "https://www.youtube.com/shorts/DaFRSNGBYnE",
+      "url": "https://www.youtube.com/shorts/DaFRSNGBYnE",
+      "author": {"@id": "https://mgromov688-boop.github.io/#org"},
+      "publisher": {"@id": "https://mgromov688-boop.github.io/#org"}
     },
     {
       "@type": "BreadcrumbList",
@@ -90,6 +117,11 @@
     <h1>Как Claude Code с тремя скиллами собрал рилс без единой ручной склейки</h1>
     <p class="meta"><time datetime="2026-10-11">11.10.2026</time> · AUREUS | Нейросети</p>
 <p><strong>Claude Code плюс три скилла с GitHub забрали у меня работу монтажёра.</strong> Рилс про них собран ими же: титры, цифры, движение камеры, переходы и звук. After Effects даже не открывали)</p>
+<figure class="video" style="margin:24px auto;max-width:360px">
+  <div style="position:relative;aspect-ratio:9/16;width:100%;border-radius:14px;overflow:hidden;background:#111">
+    <iframe src="https://www.youtube-nocookie.com/embed/DaFRSNGBYnE" title="Рилс: Claude Code и 3 скилла с GitHub забрали работу монтажёра" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</figure>
 <p>Для меня боль сидеть по паре часов над монтажом. Поэтому искал, как контентную часть автоматизировать, и нашёл эту связку. Теперь занимаюсь своими рабочими процессами, а Hermes и Claude Code со скиллами делают ролик.</p>
 <h2>Что за три скилла</h2>
 <p><strong>HyperFrames</strong> от HeyGen. Оживляет титры, цифры и графики под голос. Claude пишет сцену как веб-страницу, а HyperFrames превращает её в MP4. Открытый код, локальная сборка видео бесплатна.</p>
@@ -104,6 +136,7 @@
 <h2>Где я сам споткнулся</h2>
 <p>Приём из video-shotcraft лучше просить по исходнику демо, а не по названию. Когда Claude пишет приём «по памяти», вся настройка автора теряется и выходит заметно хуже.</p>
 <p>И Remotion при каждом рендере копирует папку с картинками. У меня однажды так забился системный диск в ноль) Теперь папка сборки всегда на диске, где много места.</p>
+<!-- FAQ -->
 <h2>Что забрать</h2>
 <p>Команды установки всех трёх, связку по шагам, чек-лист перед выкладкой и два бонуса (сервис дорогих фонов и словарь из 424 приёмов режиссуры) собрал в боте.</p>
 <p><strong><a href="https://t.me/MaximToshaBot?start=skills3_site">Забирай гайд в боте</a></strong></p>
