@@ -35,10 +35,6 @@
 - [OpenAI Academy: все 14 курсов со ссылками](https://telegra.ph/OpenAI-Academy-vse-14-kursov-so-ssylkami-i-s-chego-nachat-09-24)
 - [Проверь свои дополнения за 5 минут](https://telegra.ph/Prover-svoi-dopolneniya-za-5-minut-razbor-Plugin4Shell-i-gotovyj-skript-09-20)
 - [video-shotcraft: как научить Claude Code монтировать промо](https://telegra.ph/video-shotcraft-kak-nauchit-Claude-Code-montirovat-promo-09-19)
-- [Claude Code, часть 1](https://mgromov688-boop.github.io/prompts/cc-guide/)
-- [Claude Code, часть 2](https://mgromov688-boop.github.io/prompts/cc-guide-2/)
-- [Создание лендингов](https://mgromov688-boop.github.io/guide/)
-- [AI-видео для бренда: пошаговый гайд](https://mgromov688-boop.github.io/prompts/guide/)
 
 ## Optional
 
