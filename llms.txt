@@ -1,0 +1,44 @@
+# AUREUS | Нейросети
+
+> AUREUS | Нейросети (@aureus_ai_hub): русскоязычный проект о реальной работе с нейросетями. Темы: Claude Code, ChatGPT, монтаж видео нейросетями, автоматизации. Аудитория: новички и те, кто уже пробует нейросети в своих задачах. Разборы выходят в Telegram, рилсы в Instagram, TikTok и YouTube, бесплатные гайды выдаёт бот @MaximToshaBot.
+
+Слоган: ADVANCING INTELLIGENCE. Сайт: https://mgromov688-boop.github.io/
+Раньше назывался «Claude Кодыч» (@ClaudeCodich), с 05.10.2026 это AUREUS | Нейросети (@aureus_ai_hub).
+
+## Площадки
+
+- [Telegram-канал @aureus_ai_hub](https://t.me/aureus_ai_hub): основной канал, посты и разборы
+- [Instagram @aureus_ai_hub](https://www.instagram.com/aureus_ai_hub/): рилсы
+- [TikTok @aureus_ai_hub](https://www.tiktok.com/@aureus_ai_hub): короткие ролики
+- [YouTube @aureus_ai_hub](https://www.youtube.com/@aureus_ai_hub): шортсы
+- [Threads @aureus_ai_hub](https://www.threads.com/@aureus_ai_hub)
+- [Бот @MaximToshaBot](https://t.me/MaximToshaBot): выдаёт гайды и файлы к постам
+
+## Блог
+
+- [Как Claude Code с тремя скиллами собрал рилс без единой ручной склейки](https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/): 11.10.2026
+
+## Гайды
+
+Пошаговые гайды: скиллы Claude Code, монтаж нейросетями, выбор нейросети под задачу. Свежие выдаёт бот @MaximToshaBot за подписку на канал.
+
+- [3 скилла для монтажа в Claude Code: как поставить и собрать свой рилс](https://telegra.ph/3-skilla-dlya-montazha-v-Claude-Code-kak-postavit-i-sobrat-svoj-rils-10-11)
+- [Как Claude Code с тремя скиллами собрал рилс без единой ручной склейки](https://telegra.ph/Kak-Claude-Code-s-tremya-skillami-sobral-rils-bez-edinoj-ruchnoj-sklejki-10-11)
+- [Бесплатное обучение по нейросетям: курсы Anthropic, OpenAI, Google и n8n](https://t.me/MaximToshaBot?start=courses_site): выдаёт бот за подписку
+- [replica-skill для Claude Code: как поставить 11 скиллов](https://telegra.ph/replica-skill-dlya-Claude-Code-kak-postavit-11-skillov-i-nachat-s-Predprinimatelya-10-07)
+- [Собери свою команду нейросетей (Hermes)](https://telegra.ph/Soberi-svoyu-komandu-nejrosetej-10-05)
+- [Мод для своей игры с Claude Code: universal-modder](https://telegra.ph/Mod-dlya-svoej-igry-s-Claude-Code-kak-postavit-universal-modder-i-chto-prosit-10-04)
+- [Почему рилс не залетел: как разобрать свои ролики с Claude](https://telegra.ph/Pochemu-rils-ne-zaletel-kak-razobrat-svoi-roliki-s-Claude-10-01)
+- [Студия монтажа в Claude Code: как поставить за один запуск](https://telegra.ph/Studiya-montazha-v-Claude-Code-kak-postavit-za-odin-zapusk-09-30)
+- [Какую нейросеть брать под задачу и сколько она стоит](https://telegra.ph/Kakuyu-nejroset-brat-pod-zadachu-i-skolko-ona-stoit-shpargalka-na-oktyabr-2026-09-30)
+- [OpenAI Academy: все 14 курсов со ссылками](https://telegra.ph/OpenAI-Academy-vse-14-kursov-so-ssylkami-i-s-chego-nachat-09-24)
+- [Проверь свои дополнения за 5 минут](https://telegra.ph/Prover-svoi-dopolneniya-za-5-minut-razbor-Plugin4Shell-i-gotovyj-skript-09-20)
+- [video-shotcraft: как научить Claude Code монтировать промо](https://telegra.ph/video-shotcraft-kak-nauchit-Claude-Code-montirovat-promo-09-19)
+- [Claude Code, часть 1](https://mgromov688-boop.github.io/prompts/cc-guide/)
+- [Claude Code, часть 2](https://mgromov688-boop.github.io/prompts/cc-guide-2/)
+- [Создание лендингов](https://mgromov688-boop.github.io/guide/)
+- [AI-видео для бренда: пошаговый гайд](https://mgromov688-boop.github.io/prompts/guide/)
+
+## Optional
+
+- [Карта сайта](https://mgromov688-boop.github.io/sitemap.xml)
