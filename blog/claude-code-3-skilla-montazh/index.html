@@ -35,9 +35,19 @@
       "mainEntityOfPage": "https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/",
       "url": "https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/",
       "image": "https://mgromov688-boop.github.io/assets/aureus_logo_final_1254.png",
-      "author": {"@type": "Organization", "@id": "https://mgromov688-boop.github.io/#org", "name": "AUREUS | Нейросети"},
-      "publisher": {"@type": "Organization", "@id": "https://mgromov688-boop.github.io/#org", "name": "AUREUS | Нейросети"},
-      "video": {"@id": "https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/#video"},
+      "author": {
+        "@type": "Organization",
+        "@id": "https://mgromov688-boop.github.io/#org",
+        "name": "AUREUS | Нейросети"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mgromov688-boop.github.io/#org",
+        "name": "AUREUS | Нейросети"
+      },
+      "video": {
+        "@id": "https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/#video"
+      },
       "isPartOf": {
         "@type": "Blog",
         "@id": "https://mgromov688-boop.github.io/blog/#blog"
@@ -79,8 +89,12 @@
       "embedUrl": "https://www.youtube-nocookie.com/embed/DaFRSNGBYnE",
       "contentUrl": "https://www.youtube.com/shorts/DaFRSNGBYnE",
       "url": "https://www.youtube.com/shorts/DaFRSNGBYnE",
-      "author": {"@id": "https://mgromov688-boop.github.io/#org"},
-      "publisher": {"@id": "https://mgromov688-boop.github.io/#org"}
+      "author": {
+        "@id": "https://mgromov688-boop.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://mgromov688-boop.github.io/#org"
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -102,6 +116,57 @@
           "position": 3,
           "name": "Как Claude Code с тремя скиллами собрал рилс без единой ручной склейки",
           "item": "https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/#faq",
+      "url": "https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/",
+      "inLanguage": "ru",
+      "isPartOf": {
+        "@id": "https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/#article"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли монтировать видео в Claude Code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, с тремя скиллами с GitHub: HyperFrames, Remotion и video-shotcraft. Claude Code раскладывает озвучку по словам с временем, на каждое важное слово ставит свой кадр, собирает сцены и рендерит вертикальное видео со звуками. Команды установки всех трёх лежат в гайде в боте @MaximToshaBot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что такое HyperFrames?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это инструмент от HeyGen для титров, цифр и графиков под голос. Сцену пишут как обычную веб-страницу, а HyperFrames превращает её в MP4 и собирает его у тебя на компьютере бесплатно. Код открытый."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что такое Remotion и зачем он в монтаже?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Remotion собирает видео из сцен на React (на нём же делают сайты). В нашей связке он водит камеру по скриншотам настоящих страниц и кладёт звук. Тоже лежит на GitHub."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Remotion бесплатный или платный?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Бесплатный для одного человека и компаний до 3 сотрудников, команде побольше нужна платная лицензия. HyperFrames и video-shotcraft открытые и бесплатные, а сам Claude Code работает по платной подписке Anthropic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Может ли нейросеть смонтировать видео автоматически?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, почти целиком. Склейки, титры, ходы камеры и звук делает Claude Code со скиллами. На тебе вкус, текст и правки (After Effects мы так и не открыли). Два совета из практики: приём из video-shotcraft проси по исходнику демо, а сборку Remotion держи на диске с запасом места, он при каждом рендере копирует папку с картинками."
+          }
         }
       ]
     }
@@ -137,6 +202,19 @@
 <p>Приём из video-shotcraft лучше просить по исходнику демо, а не по названию. Когда Claude пишет приём «по памяти», вся настройка автора теряется и выходит заметно хуже.</p>
 <p>И Remotion при каждом рендере копирует папку с картинками. У меня однажды так забился системный диск в ноль) Теперь папка сборки всегда на диске, где много места.</p>
 <!-- FAQ -->
+<section class="faq" id="faq">
+<h2>Частые вопросы</h2>
+<h3>Можно ли монтировать видео в Claude Code?</h3>
+<p>Да, с тремя скиллами с GitHub: HyperFrames, Remotion и video-shotcraft. Claude Code раскладывает озвучку по словам с временем, на каждое важное слово ставит свой кадр, собирает сцены и рендерит вертикальное видео со звуками. Команды установки всех трёх лежат в гайде в боте @MaximToshaBot.</p>
+<h3>Что такое HyperFrames?</h3>
+<p>Это инструмент от HeyGen для титров, цифр и графиков под голос. Сцену пишут как обычную веб-страницу, а HyperFrames превращает её в MP4 и собирает его у тебя на компьютере бесплатно. Код открытый.</p>
+<h3>Что такое Remotion и зачем он в монтаже?</h3>
+<p>Remotion собирает видео из сцен на React (на нём же делают сайты). В нашей связке он водит камеру по скриншотам настоящих страниц и кладёт звук. Тоже лежит на GitHub.</p>
+<h3>Remotion бесплатный или платный?</h3>
+<p>Бесплатный для одного человека и компаний до 3 сотрудников, команде побольше нужна платная лицензия. HyperFrames и video-shotcraft открытые и бесплатные, а сам Claude Code работает по платной подписке Anthropic.</p>
+<h3>Может ли нейросеть смонтировать видео автоматически?</h3>
+<p>Да, почти целиком. Склейки, титры, ходы камеры и звук делает Claude Code со скиллами. На тебе вкус, текст и правки (After Effects мы так и не открыли). Два совета из практики: приём из video-shotcraft проси по исходнику демо, а сборку Remotion держи на диске с запасом места, он при каждом рендере копирует папку с картинками.</p>
+</section>
 <h2>Что забрать</h2>
 <p>Команды установки всех трёх, связку по шагам, чек-лист перед выкладкой и два бонуса (сервис дорогих фонов и словарь из 424 приёмов режиссуры) собрал в боте.</p>
 <p><strong><a href="https://t.me/MaximToshaBot?start=skills3_site">Забирай гайд в боте</a></strong></p>
