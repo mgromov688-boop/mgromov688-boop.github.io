@@ -164,10 +164,10 @@ def build_post(meta: dict, body_html: str) -> str:
                 "inLanguage": "ru",
                 "mainEntityOfPage": url,
                 "url": url,
-                "image": f"{HOST}/assets/aureus_logo_final_1254.png",
+                "image": f"{HOST}/assets/aureus_logo_1200.jpg",
                 "author": {"@type": "Organization", "@id": ORG, "name": "AUREUS | Нейросети", "url": HOST + "/"},
                 "publisher": {"@type": "Organization", "@id": ORG, "name": "AUREUS | Нейросети",
-                              "logo": {"@type": "ImageObject", "url": f"{HOST}/assets/aureus_logo_final_1254.png"}},
+                              "logo": {"@type": "ImageObject", "url": f"{HOST}/assets/aureus_logo_1200.jpg"}},
                 "isPartOf": {"@type": "Blog", "@id": f"{HOST}/blog/#blog"},
             },
             {
@@ -225,10 +225,16 @@ def build_blog_index(posts: list[dict]) -> str:
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AUREUS | Нейросети">
 <meta property="og:title" content="Блог AUREUS | Нейросети">
+<meta property="og:description" content="Блог AUREUS | Нейросети (@aureus_ai_hub): как собираем ролики, автоматизации и рабочие связки на Claude Code и ChatGPT. Разборы с цифрами и затыками.">
 <meta property="og:url" content="{HOST}/blog/">
-<meta property="og:image" content="{HOST}/assets/aureus_logo_final_1254.png">
+<meta property="og:image" content="{HOST}/assets/aureus_logo_1200.jpg">
 <meta property="og:locale" content="ru_RU">
-<link rel="icon" type="image/png" href="/assets/aureus_avatar_mark_512.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Блог AUREUS | Нейросети">
+<meta name="twitter:description" content="Блог AUREUS | Нейросети (@aureus_ai_hub): как собираем ролики, автоматизации и рабочие связки на Claude Code и ChatGPT. Разборы с цифрами и затыками.">
+<meta name="twitter:image" content="{HOST}/assets/aureus_logo_1200.jpg">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/aureus_avatar_mark_192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">

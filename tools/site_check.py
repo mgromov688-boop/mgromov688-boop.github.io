@@ -28,8 +28,8 @@ def url_of(path: pathlib.Path) -> str:
 
 # 1. HTML: JSON-LD, canonical, описание, плейсхолдеры
 for f in sorted(ROOT.rglob("*.html")):
-    if "tools" in f.relative_to(ROOT).parts or re.fullmatch(r"google[0-9a-f]+\.html", f.name):
-        continue  # файл подтверждения Search Console: служебный, разметка ему не нужна
+    if "tools" in f.relative_to(ROOT).parts or re.fullmatch(r"google[0-9a-f]+\.html", f.name) or f.name == "404.html":
+        continue  # подтверждение Search Console и 404 (noindex): служебные, разметка им не нужна
     rel, t = f.relative_to(ROOT).as_posix(), f.read_text(encoding="utf-8")
     for b in re.findall(r'<script type="application/ld\+json">(.*?)</script>', t, re.S):
         try:
