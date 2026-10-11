@@ -21,6 +21,15 @@ article blockquote{border-left:3px solid var(--copper);padding:4px 0 4px 18px;co
 article code{background:var(--raised);padding:2px 6px;border-radius:6px;font-size:.92em}
 article img{max-width:100%;height:auto;border-radius:12px}
 article figcaption{color:var(--stone);font-size:14px;margin-top:6px}
+article pre.code{margin:0 0 18px;background:var(--raised);border:1px solid #2c2824;border-left:3px solid var(--copper);border-radius:10px;padding:14px 18px;overflow-x:auto}
+article pre.code code{background:none;padding:0;font-family:"JetBrains Mono",ui-monospace,Consolas,monospace;font-size:15px;line-height:1.6;color:var(--bone);white-space:pre}
+.table-wrap{margin:0 0 18px;overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #2c2824;border-radius:12px}
+.table-wrap:focus{outline:2px solid var(--copper);outline-offset:2px}
+article table{width:100%;min-width:620px;border-collapse:collapse;font-size:15px;line-height:1.5}
+article th,article td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid #23201d}
+article thead th{background:var(--raised);color:var(--champ-light);font-weight:600}
+article tbody th{color:#fff;font-weight:500;width:28%}
+article tbody tr:last-child th,article tbody tr:last-child td{border-bottom:0}
 article hr{border:0;border-top:1px solid #23201d;margin:32px 0}
 .next{display:flex;flex-wrap:wrap;gap:12px;margin:36px 0 12px;padding-top:28px;border-top:1px solid #23201d}
 .cta{display:inline-block;background:var(--raised);color:var(--bone);padding:14px 22px;border-radius:12px;text-decoration:none;font-weight:600;border-bottom:2px solid var(--copper)}

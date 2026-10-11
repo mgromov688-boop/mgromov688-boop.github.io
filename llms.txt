@@ -16,6 +16,7 @@
 
 ## Блог
 
+- [HyperFrames vs Remotion: что выбрать для видео кодом в Claude Code](https://mgromov688-boop.github.io/blog/hyperframes-vs-remotion/): 12.10.2026, сравнение, лицензии, установка HyperFrames, связка для рилсов
 - [Как Claude Code с тремя скиллами собрал рилс без единой ручной склейки](https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/): 11.10.2026
 
 ## Гайды
