@@ -16,6 +16,7 @@
 
 ## Блог
 
+- [Make MCP: как подключить Make к Claude Code и что автоматизировать](https://mgromov688-boop.github.io/blog/make-mcp-claude-code/): 12.10.2026, подключение Make к Claude Code и Codex, вход через токен, тарифы Make, идеи автоматизации
 - [HyperFrames vs Remotion: что выбрать для видео кодом в Claude Code](https://mgromov688-boop.github.io/blog/hyperframes-vs-remotion/): 12.10.2026, сравнение, лицензии, установка HyperFrames, связка для рилсов
 - [Как Claude Code с тремя скиллами собрал рилс без единой ручной склейки](https://mgromov688-boop.github.io/blog/claude-code-3-skilla-montazh/): 11.10.2026
 

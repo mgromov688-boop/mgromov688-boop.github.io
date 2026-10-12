@@ -1,5 +1,15 @@
 [
   {
+    "slug": "make-mcp-claude-code",
+    "title": "Make MCP: как подключить Make к Claude Code и что автоматизировать",
+    "date": "2026-10-12",
+    "description": "Подключи Make MCP к Claude Code: команды, вход через токен, бесплатный тариф и идеи автоматизации. Разбираем запуск сценариев, создание и настройку Codex.",
+    "bot_key": "makemcp",
+    "source": "D:\\kodych-reel-gpt6\\geo\\articles\\make-mcp-claude-code_v2.md",
+    "modified": "2026-10-12",
+    "manual": "свёрстана build_mcp.py: в статье команды, картинки и партнёрская ссылка, new_post.py их не делает"
+  },
+  {
     "slug": "hyperframes-vs-remotion",
     "title": "HyperFrames vs Remotion: что выбрать для видео кодом в Claude Code",
     "date": "2026-10-12",
