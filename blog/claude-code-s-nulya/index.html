@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code с нуля: первые уроки на русском · AUREUS</title>
+<meta name="description" content="Разберись, что такое Claude Code и как он работает. Установка, цены, первый запуск и 7 уроков на русском: от знакомства с папкой до первой правки проекта.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://mgromov688-boop.github.io/blog/claude-code-s-nulya/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AUREUS | Нейросети">
+<meta property="og:title" content="Claude Code с нуля: первые уроки на русском">
+<meta property="og:description" content="Разберись, что такое Claude Code и как он работает. Установка, цены, первый запуск и 7 уроков на русском: от знакомства с папкой до первой правки проекта.">
+<meta property="og:url" content="https://mgromov688-boop.github.io/blog/claude-code-s-nulya/">
+<meta property="og:image" content="https://mgromov688-boop.github.io/blog/claude-code-s-nulya/cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Claude Code с нуля: установка, цены и 7 первых уроков на русском, AUREUS">
+<meta property="og:locale" content="ru_RU">
+<meta property="article:published_time" content="2026-10-19">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Claude Code с нуля: первые уроки на русском">
+<meta name="twitter:description" content="Разберись, что такое Claude Code и как он работает. Установка, цены, первый запуск и 7 уроков на русском: от знакомства с папкой до первой правки проекта.">
+<meta name="twitter:image" content="https://mgromov688-boop.github.io/blog/claude-code-s-nulya/cover.jpg">
+<meta name="twitter:image:alt" content="Claude Code с нуля: установка, цены и 7 первых уроков на русском, AUREUS">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/aureus_avatar_mark_192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+article pre.code{position:relative}
+article pre.code .copy{position:absolute;top:8px;right:8px;font:500 13px/1 Onest,system-ui,sans-serif;color:var(--bone,#F3EEE6);background:#1A1816;border:1px solid #3a342e;border-radius:8px;padding:7px 10px;cursor:pointer}
+article pre.code .copy:hover,article pre.code .copy:focus-visible{border-color:var(--copper,#9A6A4A)}
+article pre.code[data-copy] code{display:block;padding-right:96px}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://mgromov688-boop.github.io/blog/claude-code-s-nulya/#article",
+      "headline": "Claude Code с нуля: что это и как работает",
+      "description": "Разберись, что такое Claude Code и как он работает. Установка, цены, первый запуск и 7 уроков на русском: от знакомства с папкой до первой правки проекта.",
+      "datePublished": "2026-10-19",
+      "dateModified": "2026-10-19",
+      "inLanguage": "ru",
+      "mainEntityOfPage": "https://mgromov688-boop.github.io/blog/claude-code-s-nulya/",
+      "url": "https://mgromov688-boop.github.io/blog/claude-code-s-nulya/",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://mgromov688-boop.github.io/blog/claude-code-s-nulya/cover.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "author": {
+        "@type": "Organization",
+        "@id": "https://mgromov688-boop.github.io/#org",
+        "name": "AUREUS | Нейросети"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mgromov688-boop.github.io/#org",
+        "name": "AUREUS | Нейросети"
+      },
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Claude Code",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Windows, macOS, Linux",
+          "url": "https://code.claude.com/docs/en/overview",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Anthropic",
+            "url": "https://www.anthropic.com/"
+          }
+        }
+      ],
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://mgromov688-boop.github.io/blog/#blog"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://mgromov688-boop.github.io/#org",
+      "name": "AUREUS | Нейросети",
+      "alternateName": "aureus_ai_hub",
+      "url": "https://mgromov688-boop.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mgromov688-boop.github.io/assets/aureus_logo_1200.jpg",
+        "width": 1200,
+        "height": 1200
+      },
+      "sameAs": [
+        "https://t.me/aureus_ai_hub",
+        "https://www.instagram.com/aureus_ai_hub/",
+        "https://www.tiktok.com/@aureus_ai_hub",
+        "https://www.youtube.com/@aureus_ai_hub",
+        "https://www.youtube.com/channel/UCxvb_2dgvJiUAKXavV8NHvQ",
+        "https://www.threads.com/@aureus_ai_hub",
+        "https://t.me/MaximToshaBot"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "AUREUS | Нейросети",
+          "item": "https://mgromov688-boop.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://mgromov688-boop.github.io/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Claude Code с нуля: что это и как работает",
+          "item": "https://mgromov688-boop.github.io/blog/claude-code-s-nulya/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mgromov688-boop.github.io/blog/claude-code-s-nulya/#faq",
+      "url": "https://mgromov688-boop.github.io/blog/claude-code-s-nulya/",
+      "inLanguage": "ru",
+      "isPartOf": {
+        "@id": "https://mgromov688-boop.github.io/blog/claude-code-s-nulya/#article"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Claude Code: что это и как работает?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это агент Anthropic для работы с кодом и файлами проекта. Ты описываешь задачу обычными словами, а Claude Code читает файлы, предлагает и вносит правки, запускает команды. Начинать удобнее с изучения проекта и одного небольшого изменения."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли использовать Claude Code на русском?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В нашем опыте AUREUS да: пишем задачи по-русски, получаем русские ответы и работаем с русскими текстами. CLAUDE.md тоже пишем на русском. Отдельную официальную страницу о поддержке русского языка мы не нашли."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько стоит Claude Code и есть ли он на Free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На Claude Free его нет. Pro стоит $20 в месяц при помесячной оплате, $17 в месяц при годовой ($200 сразу). Есть Max, Team, Enterprise и вход через Console с оплатой API заранее. Данные для статьи собраны 19.10.2026."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как запустить Claude Code после установки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Открой терминал в папке проекта и выполни: claude При первом запуске пройди вход через браузер. Дальше можно попросить объяснить структуру папок или изучить проект перед правкой."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли Claude Code только программистам?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Его основная работа связана с кодом, но первое задание может быть понятным без программирования: найти текст в проекте и заменить фразу. Наш опыт AUREUS включает монтаж рилсов, бота и публикации с нужными инструментами и настройками."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "С чего начать обучение Claude Code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "С папки знакомого проекта: попроси объяснить её структуру, найди нужный файл и согласуй одну небольшую правку. Затем открой файл и проверь результат. В уроках выше есть примеры просьб и команды, чтобы продолжить разговор позже."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="wrap top"><a class="brand" href="/">AUREUS | Нейросети</a><a class="tg" href="https://t.me/aureus_ai_hub">@aureus_ai_hub</a></header>
+<main class="wrap">
+  <nav class="crumbs"><a href="/">Главная</a> / <a href="/blog/">Блог</a></nav>
+  <article>
+    <h1>Claude Code с нуля: что это и как работает</h1>
+    <p class="meta"><time datetime="2026-10-19">19.10.2026</time> · AUREUS | Нейросети</p>
+<figure class="hero"><img src="/blog/claude-code-s-nulya/cover.jpg" width="1200" height="630" fetchpriority="high" alt="Claude Code с нуля: установка, цены и 7 первых уроков на русском, AUREUS"></figure>
+<p>Claude Code читает файлы проекта, меняет их и запускает команды по твоей просьбе. Ты описываешь задачу обычными словами: объяснить чужой проект, поправить текст на сайте или найти ошибку. Чтобы разобраться, что такое Claude Code и как он работает, начни с маленькой задачи, результат которой сможешь проверить сам.</p>
+<p>Здесь пройдём путь от установки до первой правки. <strong>Для начала хватит папки проекта и конкретной просьбы.</strong> Сложные подключения оставим на потом)</p>
+<p>Цены, команды и требования приведены по фактуре, собранной из официальной документации 19.10.2026. Наш опыт AUREUS отмечен отдельно.</p>
+<h2>Что такое Claude Code простыми словами</h2>
+<p>Claude Code от Anthropic называют агентом для работы с кодом. Слово «агент» здесь означает, что помощник умеет действовать: прочитать файлы, предложить изменения, внести их и выполнить команды. Ты задаёшь ему работу в переписке.</p>
+<p>Попроси Claude изучить папку сайта, найти страницу и заменить заголовок. При первой небольшой правке он покажет изменение и спросит разрешение. <strong>Ты видишь, что он собирается поменять.</strong> Сначала изучить проект, потом менять: эту привычку стоит завести сразу.</p>
+<h2>Что умеет Claude Code и кому пригодится</h2>
+<p>Разработчик может поручить ему исправить ошибку в нескольких файлах, написать тесты или подготовить изменения в Git. Git похож на журнал версий проекта, где хранятся правки.</p>
+<p>Но начинать с разработки большого приложения необязательно. Вот примеры задач, с которыми можно знакомиться с Claude Code:</p>
+<ul>
+<li><strong>Разобраться в готовом сайте.</strong> Попросить объяснить, где лежат страницы и какой файл отвечает за нужный текст.</li>
+<li><strong>Поправить текст.</strong> Найти заголовок в файлах проекта, заменить его и посмотреть, что изменилось.</li>
+<li><strong>Описать затык.</strong> Например, после неверного пароля видишь пустой экран. Поручить изучить причину, а затем предложить исправление.</li>
+<li><strong>Работать с подключёнными сервисами.</strong> Через MCP доступны внешние инструменты, в том числе Google Drive, Jira и Slack. MCP здесь как переходник между Claude и инструментами сервиса.</li>
+</ul>
+<p><strong>Наш опыт AUREUS:</strong> мы каждый день работаем в Claude Code на Windows. Используем его для монтажа рилсов, работы с ботом и публикаций. Это наш рабочий набор задач, а не обещание, что сразу после установки у тебя появится готовая студия монтажа. Для конкретной работы нужны подходящие инструменты и настройки.</p>
+<h2>Где работает Claude Code</h2>
+<p>Выбери привычное окно для работы:</p>
+<ul>
+<li><strong>Терминал.</strong> Окно, в котором ты вводишь команды текстом. Как строка переписки с компьютером: написал команду, получил ответ.</li>
+<li><strong>Редакторы кода.</strong> Есть расширения для VS Code и JetBrains, в том числе работа в Cursor.</li>
+<li><strong>Приложение для компьютера.</strong> В нём есть вкладка Code. На Windows x64 и ARM64 приложение уже содержит Claude Code, отдельно ставить CLI не надо. CLI означает запуск через командную строку.</li>
+<li><strong>Браузер.</strong> Можно работать через claude.ai/code.</li>
+<li><strong>Мобильное приложение Claude.</strong> На iOS и Android доступна работа с облачными задачами.</li>
+</ul>
+<p>Дальше используем терминал. Приложению для компьютера тоже нужна платная подписка.</p>
+<h2>Сколько стоит Claude Code</h2>
+<p>Claude Code входит в Pro, Max, Team и Enterprise. Ещё один вариант доступа: аккаунт Console с оплатой API заранее. <strong>На плане Claude Free Claude Code нет.</strong></p>
+<p>По данным на 19.10.2026:</p>
+<div class="table-wrap" role="region" aria-label="Планы и цены Claude Code" tabindex="0">
+<table>
+<thead><tr><th scope="col">План</th><th scope="col">Цена и условия</th></tr></thead>
+<tbody>
+<tr><th scope="row">Pro</th><td>$20 в месяц при помесячной оплате, $17 в месяц при годовой ($200 сразу). Claude Code входит.</td></tr>
+<tr><th scope="row">Max</th><td>от $100 в месяц, 5x или 20x лимитов Pro; включает $100-200 в месяц кредитов API.</td></tr>
+</tbody>
+</table>
+</div>
+<p>Обрати внимание на оплату Pro за год: <strong>$200 сразу</strong>, а не отдельное списание $17 каждый месяц. Для Team и Enterprise здесь цены не приводим. В собранной для статьи фактуре их нет.</p>
+<h2>Как установить Claude Code: коротко</h2>
+<p>Для локальной работы требования такие: Windows 10 версии 1809+ или Windows Server 2019+; macOS 13+; Ubuntu 20.04+, Debian 10+, Alpine 3.19+. Память от 4 ГБ, процессор x64 или ARM64. Нужен интернет. Оболочка: Bash, Zsh, PowerShell или CMD. Страна должна быть из списка поддерживаемых Anthropic.</p>
+<p>Ниже короткий путь для Windows. <strong>Права администратора не нужны.</strong> Подробный разбор и помощь с ошибками вынесли в <a href="/blog/claude-code-windows/">пошаговую установку Claude Code на Windows</a>.</p>
+<h3>Установка через PowerShell</h3>
+<p>Открой PowerShell. Его строка начинается с <code>PS C:\</code>. Вставь команду:</p>
+<pre class="code" data-lang="powershell"><code>irm https://claude.ai/install.ps1 | iex</code></pre>
+<p>Установщик ничего не показывает, пока скачивает. Это нормально. После окончания открой <strong>новое окно терминала</strong> и проверь установку:</p>
+<pre class="code" data-lang="text"><code>claude --version</code></pre>
+<p>В ответе должен появиться номер версии и «(Claude Code)». Для подробной диагностики установки и настроек без запуска сессии есть команда:</p>
+<pre class="code" data-lang="text"><code>claude doctor</code></pre>
+<p>Если после установки система не находит Claude, причина может быть в PATH. Это список папок, в которых компьютер ищет программы, как адресная книга для команд. В документации этот случай разобран в разделе Fix your PATH.</p>
+<p>Git for Windows рекомендуется: он даёт Git Bash для выполнения команд Bash. Без Git Claude Code использует PowerShell.</p>
+<h2>Первый запуск: открой папку и войди в аккаунт</h2>
+<p>Выбери папку знакомого проекта, например небольшого сайта, где сможешь проверить правку.</p>
+<p>В терминале перейди в нужную папку:</p>
+<pre class="code" data-lang="text"><code>cd путь\к\проекту</code></pre>
+<p>Вместо <code>путь\к\проекту</code> подставь путь к своей папке. Затем запусти Claude Code:</p>
+<pre class="code" data-lang="text"><code>claude</code></pre>
+<p>При первом запуске вход проходит через браузер. Используй аккаунт подписки или Console. Дальше вход сохраняется.</p>
+<p><strong>Команды запуска вводятся в терминале, а просьбы к Claude уже внутри его сессии.</strong> Например, после запуска можно написать: «Объясни структуру папок». Это и будет твоя первая рабочая задача.</p>
+<h2>Claude Code на русском: как работаем мы</h2>
+<p><strong>Наш опыт:</strong> задачи пишем по-русски, Claude Code отвечает по-русски и работает с русскими текстами. Правила проекта в CLAUDE.md тоже можно писать на русском.</p>
+<p>Отдельной официальной страницы о русском языке мы в документации не нашли, поэтому не называем это официально заявленной поддержкой. Здесь рассказываем, как используем инструмент сами.</p>
+<p>Пиши как человеку рядом: «Найди файл с текстом этой страницы и покажи его. Пока ничего не меняй». Длинный промпт для этого не нужен)</p>
+<h2>Claude Code: обучение на русском в 7 первых уроках</h2>
+<p>Примеры просьб ниже составлены для обучения по рекомендациям документации. Это задания для тебя, а не отчёт о выполненном тесте.</p>
+<h3>Урок 1. Узнай, что делает проект</h3>
+<ol>
+<li>Запусти Claude Code в папке проекта.</li>
+<li>Напиши: «Что делает этот проект? Объясни простыми словами. Пока ничего не меняй».</li>
+<li>Прочитай ответ и сопоставь его с тем, что знаешь о проекте.</li>
+</ol>
+<p><strong>Результат урока:</strong> короткое описание проекта. Незнакомые слова попроси пояснить на примере того, что увидит пользователь.</p>
+<h3>Урок 2. Найди нужный файл</h3>
+<p>Теперь напиши: «Объясни структуру папок. Найди, где хранится текст главной страницы. Покажи путь к файлу, ничего не меняй».</p>
+<p>Для проекта без сайта выбери другой знакомый текст, например описание проекта. Открой указанный файл и найди фрагмент сам. <strong>Проверка простая: текст действительно там лежит.</strong> Если Claude указал другое место, уточни запрос.</p>
+<h3>Урок 3. Попроси одну небольшую правку</h3>
+<ol>
+<li>Выбери короткий заголовок или фразу в найденном файле.</li>
+<li>Напиши, какой текст заменить и что поставить вместо него.</li>
+<li>Добавь: «Меняй только этот фрагмент. Остальное оставь как есть».</li>
+<li>Посмотри предложенную правку и дай разрешение, если она совпадает с задачей.</li>
+</ol>
+<p>В первой небольшой правке Claude покажет изменение и спросит разрешение. Режим разрешений переключается сочетанием <code>Shift+Tab</code>. <strong>Для этого урока оставь проверку правки за собой:</strong> цель в том, чтобы понять, на что ты соглашаешься.</p>
+<p>После изменения открой файл. Новый текст должен быть на месте. Пока выбирай то, что умеешь проверить без помощи программиста.</p>
+<h3>Урок 4. Опиши ошибку так, чтобы её можно было искать</h3>
+<p>Возьми конкретную проблему проекта. В документации пример такой: «почини вход, где после неверного пароля пустой экран», а не «почини баг».</p>
+<p>Для тренировки раздели просьбу:</p>
+<ol>
+<li>Опиши своё действие и что появляется после него.</li>
+<li>Попроси сначала изучить код и объяснить возможную причину.</li>
+<li>Затем попроси предложить маленькое исправление.</li>
+<li>После согласованной правки повтори исходное действие и посмотри на результат.</li>
+</ol>
+<p>Если у тебя сейчас нет такой ошибки, пропусти задание до реального случая. Придумывать поломку ради галочки смысла нет. Здесь важна привычка: <strong>писать, где именно затык и что ты видишь</strong>, вместо общего «ничего не работает».</p>
+<h3>Урок 5. Разбей большую задачу на шаги</h3>
+<p>Вернись к своему проекту и выбери задачу шире одной фразы. Например, привести тексты страницы к одному стилю. Пока попроси только план: «Изучи тексты этой страницы. Предложи порядок правок, чтобы я мог проверить каждый шаг. Файлы пока не меняй».</p>
+<p>Прочитай план и выбери первый пункт. Поручи выполнить только его, затем проверь результат. К следующему переходи после проверки.</p>
+<h3>Урок 6. Вернись к прошлому разговору</h3>
+<p>Заверши сессию командой внутри Claude Code:</p>
+<pre class="code" data-lang="text"><code>/exit</code></pre>
+<p>В той же папке введи в терминале:</p>
+<pre class="code" data-lang="text"><code>claude -c</code></pre>
+<p>Эта команда продолжает последний разговор в папке. Если нужно выбрать другой прошлый разговор, используй:</p>
+<pre class="code" data-lang="text"><code>claude -r</code></pre>
+<p>После возвращения попроси напомнить, на какой правке вы остановились. Сравни ответ с файлом, который менял.</p>
+<h3>Урок 7. Освой справку и короткий запрос</h3>
+<p>Внутри Claude Code открой справку:</p>
+<pre class="code" data-lang="text"><code>/help</code></pre>
+<p>Посмотри доступные команды. Отдельно попробуй короткий запрос из терминала:</p>
+<pre class="code" data-lang="text"><code>claude -p "вопрос"</code></pre>
+<p>Вместо слова «вопрос» напиши свою просьбу, сохранив кавычки. Эта команда даёт один ответ и выходит. Для обычной работы с обсуждением правок возвращайся к запуску сессии:</p>
+<pre class="code" data-lang="text"><code>claude</code></pre>
+<h2>CLAUDE.md и скиллы: чтобы меньше повторяться</h2>
+<p><strong>CLAUDE.md в корне проекта содержит правила, которые Claude читает в начале каждой сессии.</strong> Корень здесь означает главную папку проекта. Файл похож на записку для того, кто пришёл работать: как отвечать, что учитывать и о чём договориться до изменений.</p>
+<p>Например, для учебного проекта можно записать такие правила:</p>
+<blockquote><p>Отвечай по-русски. Перед правкой объясни, какой файл хочешь изменить. Если задача состоит из нескольких шагов, сначала предложи порядок работы.</p></blockquote>
+<p>Это пример содержания, а не обязательный шаблон. Наш опыт с русским языком относится и к этому файлу: правила в CLAUDE.md пишем на русском.</p>
+<p>Начни с правил, которые понадобились в уроках. Если каждый раз просишь объяснять проще, запиши это.</p>
+<p>Скиллы пригодятся для повторяемых задач: процесс упаковывается в скилл и вызывается через команду с его именем:</p>
+<pre class="code" data-lang="text"><code>/имя</code></pre>
+<p>Это обозначение вызова из документации, а не имя готового скилла. Для своего процесса используй имя конкретного скилла. Пример такого применения у нас разобран в статье про <a href="/blog/claude-code-3-skilla-montazh/">монтаж видео в Claude Code</a>.</p>
+<h2>Куда двигаться после первых уроков</h2>
+<p>Выбирай продолжение по своей работе:</p>
+<ul>
+<li>Застрял на установке: <a href="/blog/claude-code-windows/">пошаговая инструкция для Windows</a>.</li>
+<li>Хочешь подключить сервисы: <a href="/blog/make-mcp-claude-code/">MCP простыми словами и Make</a>.</li>
+<li>Интересен монтаж: <a href="/blog/claude-code-3-skilla-montazh/">скиллы для видео в Claude Code</a>.</li>
+<li>Хочешь разобраться с видео кодом: <a href="/blog/hyperframes-vs-remotion/">HyperFrames и Remotion</a>.</li>
+</ul>
+<p>Лучше пройти один путь под свою задачу. Если сейчас нужно поправить сайт, монтаж и внешние сервисы спокойно подождут)</p>
+<h2>Забирай пошаговый гайд по Claude Code в боте</h2>
+<p><a href="https://t.me/MaximToshaBot?start=guidecc_site"><strong>Забирай пошаговый гайд по Claude Code в боте</strong></a>. Сохрани его рядом с проектом, чтобы вернуться к шагам, когда сядешь пробовать сам.</p>
+<section class="faq" id="faq">
+<h2>FAQ</h2>
+<h3>Claude Code: что это и как работает?</h3>
+<p>Это агент Anthropic для работы с кодом и файлами проекта. Ты описываешь задачу обычными словами, а Claude Code читает файлы, предлагает и вносит правки, запускает команды. Начинать удобнее с изучения проекта и одного небольшого изменения.</p>
+<h3>Можно ли использовать Claude Code на русском?</h3>
+<p>В нашем опыте AUREUS да: пишем задачи по-русски, получаем русские ответы и работаем с русскими текстами. CLAUDE.md тоже пишем на русском. Отдельную официальную страницу о поддержке русского языка мы не нашли.</p>
+<h3>Сколько стоит Claude Code и есть ли он на Free?</h3>
+<p>На Claude Free его нет. Pro стоит $20 в месяц при помесячной оплате, $17 в месяц при годовой ($200 сразу). Есть Max, Team, Enterprise и вход через Console с оплатой API заранее. Данные для статьи собраны 19.10.2026.</p>
+<h3>Как запустить Claude Code после установки?</h3>
+<p>Открой терминал в папке проекта и выполни:</p>
+<pre class="code" data-lang="text"><code>claude</code></pre>
+<p>При первом запуске пройди вход через браузер. Дальше можно попросить объяснить структуру папок или изучить проект перед правкой.</p>
+<h3>Нужен ли Claude Code только программистам?</h3>
+<p>Его основная работа связана с кодом, но первое задание может быть понятным без программирования: найти текст в проекте и заменить фразу. Наш опыт AUREUS включает монтаж рилсов, бота и публикации с нужными инструментами и настройками.</p>
+<h3>С чего начать обучение Claude Code?</h3>
+<p>С папки знакомого проекта: попроси объяснить её структуру, найди нужный файл и согласуй одну небольшую правку. Затем открой файл и проверь результат. В уроках выше есть примеры просьб и команды, чтобы продолжить разговор позже.</p>
+</section>
+  </article>
+  <aside class="next">
+    <a class="cta" href="https://t.me/MaximToshaBot?start=guidecc_site">Пошаговый гайд по Claude Code в боте @MaximToshaBot</a>
+    <a class="cta ghost" href="https://t.me/aureus_ai_hub">Telegram-канал @aureus_ai_hub</a>
+  </aside>
+</main>
+<footer class="wrap">
+  <span class="tag">ADVANCING INTELLIGENCE</span>
+  AUREUS | Нейросети · <a href="https://t.me/aureus_ai_hub">t.me/aureus_ai_hub</a>
+  <nav aria-label="AUREUS | Нейросети в соцсетях">
+    <a href="https://t.me/aureus_ai_hub" rel="me">Telegram</a>
+    <a href="https://www.instagram.com/aureus_ai_hub/" rel="me">Instagram</a>
+    <a href="https://www.tiktok.com/@aureus_ai_hub" rel="me">TikTok</a>
+    <a href="https://www.youtube.com/@aureus_ai_hub" rel="me">YouTube</a>
+    <a href="https://www.threads.com/@aureus_ai_hub" rel="me">Threads</a>
+    <a href="https://t.me/MaximToshaBot?start=guidecc_site">Бот @MaximToshaBot</a>
+  </nav>
+</footer>
+<script>
+document.querySelectorAll("pre.code").forEach(function (pre) {
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "copy"; b.textContent = "Копировать";
+  b.setAttribute("aria-label", "Скопировать команду");
+  b.addEventListener("click", function () {
+    var t = pre.querySelector("code").innerText;
+    var done = function () { b.textContent = "Скопировано"; setTimeout(function () { b.textContent = "Копировать"; }, 1600); };
+    if (navigator.clipboard) { navigator.clipboard.writeText(t).then(done); }
+    else { var x = document.createElement("textarea"); x.value = t; document.body.appendChild(x); x.select(); document.execCommand("copy"); x.remove(); done(); }
+  });
+  pre.setAttribute("data-copy", "1");
+  pre.appendChild(b);
+});
+</script>
+</body>
+</html>

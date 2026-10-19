@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Как установить Claude Code на Windows · AUREUS</title>
+<meta name="description" content="Как установить Claude Code на Windows: команды для PowerShell и CMD, вход в аккаунт, настройка Git Bash и разбор ошибок. Пошаговая инструкция для новичка.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://mgromov688-boop.github.io/blog/claude-code-windows/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AUREUS | Нейросети">
+<meta property="og:title" content="Как установить Claude Code на Windows">
+<meta property="og:description" content="Как установить Claude Code на Windows: команды для PowerShell и CMD, вход в аккаунт, настройка Git Bash и разбор ошибок. Пошаговая инструкция для новичка.">
+<meta property="og:url" content="https://mgromov688-boop.github.io/blog/claude-code-windows/">
+<meta property="og:image" content="https://mgromov688-boop.github.io/blog/claude-code-windows/cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Как установить Claude Code на Windows: PowerShell, CMD, Git Bash и ошибки, AUREUS">
+<meta property="og:locale" content="ru_RU">
+<meta property="article:published_time" content="2026-10-19">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Как установить Claude Code на Windows">
+<meta name="twitter:description" content="Как установить Claude Code на Windows: команды для PowerShell и CMD, вход в аккаунт, настройка Git Bash и разбор ошибок. Пошаговая инструкция для новичка.">
+<meta name="twitter:image" content="https://mgromov688-boop.github.io/blog/claude-code-windows/cover.jpg">
+<meta name="twitter:image:alt" content="Как установить Claude Code на Windows: PowerShell, CMD, Git Bash и ошибки, AUREUS">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/aureus_avatar_mark_192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+article pre.code{position:relative}
+article pre.code .copy{position:absolute;top:8px;right:8px;font:500 13px/1 Onest,system-ui,sans-serif;color:var(--bone,#F3EEE6);background:#1A1816;border:1px solid #3a342e;border-radius:8px;padding:7px 10px;cursor:pointer}
+article pre.code .copy:hover,article pre.code .copy:focus-visible{border-color:var(--copper,#9A6A4A)}
+article pre.code[data-copy] code{display:block;padding-right:96px}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://mgromov688-boop.github.io/blog/claude-code-windows/#article",
+      "headline": "Как установить Claude Code на Windows",
+      "description": "Как установить Claude Code на Windows: команды для PowerShell и CMD, вход в аккаунт, настройка Git Bash и разбор ошибок. Пошаговая инструкция для новичка.",
+      "datePublished": "2026-10-19",
+      "dateModified": "2026-10-19",
+      "inLanguage": "ru",
+      "mainEntityOfPage": "https://mgromov688-boop.github.io/blog/claude-code-windows/",
+      "url": "https://mgromov688-boop.github.io/blog/claude-code-windows/",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://mgromov688-boop.github.io/blog/claude-code-windows/cover.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "author": {
+        "@type": "Organization",
+        "@id": "https://mgromov688-boop.github.io/#org",
+        "name": "AUREUS | Нейросети"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mgromov688-boop.github.io/#org",
+        "name": "AUREUS | Нейросети"
+      },
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Claude Code",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Windows, macOS, Linux",
+          "url": "https://code.claude.com/docs/en/overview",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Anthropic",
+            "url": "https://www.anthropic.com/"
+          }
+        }
+      ],
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://mgromov688-boop.github.io/blog/#blog"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://mgromov688-boop.github.io/#org",
+      "name": "AUREUS | Нейросети",
+      "alternateName": "aureus_ai_hub",
+      "url": "https://mgromov688-boop.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mgromov688-boop.github.io/assets/aureus_logo_1200.jpg",
+        "width": 1200,
+        "height": 1200
+      },
+      "sameAs": [
+        "https://t.me/aureus_ai_hub",
+        "https://www.instagram.com/aureus_ai_hub/",
+        "https://www.tiktok.com/@aureus_ai_hub",
+        "https://www.youtube.com/@aureus_ai_hub",
+        "https://www.youtube.com/channel/UCxvb_2dgvJiUAKXavV8NHvQ",
+        "https://www.threads.com/@aureus_ai_hub",
+        "https://t.me/MaximToshaBot"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "AUREUS | Нейросети",
+          "item": "https://mgromov688-boop.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://mgromov688-boop.github.io/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Как установить Claude Code на Windows",
+          "item": "https://mgromov688-boop.github.io/blog/claude-code-windows/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mgromov688-boop.github.io/blog/claude-code-windows/#faq",
+      "url": "https://mgromov688-boop.github.io/blog/claude-code-windows/",
+      "inLanguage": "ru",
+      "isPartOf": {
+        "@id": "https://mgromov688-boop.github.io/blog/claude-code-windows/#article"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли установить Claude Code на Windows без WSL?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Он устанавливается напрямую в Windows через PowerShell, CMD или WinGet. WSL 2 нужен как отдельный вариант, в том числе если тебе нужна песочница: нативная установка в Windows её не поддерживает."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какая подписка нужна для Claude Code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нужен Pro, Max, Team, Enterprise или аккаунт Console с оплатой API заранее. На Free Claude Code нет. Pro стоит $20 в месяц при помесячной оплате, $17 в месяц при годовой ($200 сразу)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужны ли права администратора для установки Claude Code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет, права администратора не нужны. Для установки через PowerShell открой обычное окно и используй команду из соответствующего раздела."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему Windows не видит команду claude после установки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Папки установки может не быть в PATH. После установки сначала открой новое окно терминала. Если команда всё ещё не находится, проверь PATH по разделу Fix your PATH в документации."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Обязательно ли ставить Git для Claude Code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Git for Windows рекомендуется: он даёт Git Bash для выполнения команд Bash. Без Git Claude Code использует PowerShell. Если установленный Git Bash не находится, путь к нему можно указать в блоке env файла settings.json."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли пользоваться Claude Code без терминала?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, в приложении Claude для компьютера есть вкладка Code. Приложение уже содержит Claude Code, отдельно ставить CLI не надо. Нужна платная подписка."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="wrap top"><a class="brand" href="/">AUREUS | Нейросети</a><a class="tg" href="https://t.me/aureus_ai_hub">@aureus_ai_hub</a></header>
+<main class="wrap">
+  <nav class="crumbs"><a href="/">Главная</a> / <a href="/blog/">Блог</a></nav>
+  <article>
+    <h1>Как установить Claude Code на Windows</h1>
+    <p class="meta"><time datetime="2026-10-19">19.10.2026</time> · AUREUS | Нейросети</p>
+<figure class="hero"><img src="/blog/claude-code-windows/cover.jpg" width="1200" height="630" fetchpriority="high" alt="Как установить Claude Code на Windows: PowerShell, CMD, Git Bash и ошибки, AUREUS"></figure>
+<p>Вот как установить Claude Code на Windows: выбери команду под своё окно терминала, установи программу и войди в аккаунт. <strong>Права администратора не нужны.</strong> Ниже пройдём установку, проверим, что всё работает, и разберём затыки с командами и Git Bash.</p>
+<p>Claude Code от Anthropic читает файлы проекта, правит их и запускает команды. Задачу ты описываешь обычными словами. У нас в AUREUS он каждый день работает на Windows: помогает с монтажом рилсов, ботом и публикациями. Это наш опыт, а дальше идут шаги из документации.</p>
+<p>Команды, требования и цены взяты из официальных материалов, собранных 19 октября 2026 года.</p>
+<h2>Что нужно для установки Claude Code на Windows</h2>
+<p>Проверь требования до установки:</p>
+<ul>
+<li>Windows 10 версии 1809+ или Windows Server 2019+.</li>
+<li>Память от 4 ГБ, процессор x64 или ARM64.</li>
+<li>Интернет.</li>
+<li>Страна из списка поддерживаемых Anthropic.</li>
+<li>Pro, Max, Team, Enterprise или аккаунт Console с оплатой API заранее.</li>
+</ul>
+<p><strong>На плане Free Claude Code нет.</strong> Pro стоит $20 в месяц при помесячной оплате, $17 в месяц при годовой ($200 сразу). Claude Code входит. Console с оплатой API заранее тоже подходит для входа, но это другой вариант оплаты.</p>
+<p>Для работы понадобятся команды в терминале. Представь окно переписки с компьютером: вместо кнопки вводишь строку, а в ответ видишь результат или ошибку. На Windows в таком окне может работать PowerShell или CMD. Их команды установки отличаются, поэтому сначала посмотрим, что открыто у тебя.</p>
+<h2>Шаг 1. Открой PowerShell и проверь строку ввода</h2>
+<p>Открой поиск Windows, набери PowerShell и открой найденное приложение. Запуск от имени администратора для этой установки не нужен.</p>
+<p>Посмотри на начало строки, рядом с которой вводятся команды:</p>
+<ul>
+<li>В PowerShell строка начинается с <code>PS C:\</code>.</li>
+<li>В CMD с <code>C:\</code> без <code>PS</code>.</li>
+</ul>
+<p><strong>Ориентируйся на строку, а не на цвет окна.</strong> Если видишь <code>PS</code>, бери команду для PowerShell из следующего раздела. Если открыт CMD, ниже есть отдельная команда для него.</p>
+<p>Само начало строки с адресом папки копировать не нужно. Вставляй только содержимое блока кода и жми Enter. У каждого блока подписано, куда его вставлять)</p>
+<h2>Шаг 2. Установи Claude Code через PowerShell или CMD</h2>
+<p>Выбери один способ установки. Все команды подряд запускать не надо.</p>
+<h3>Команда для PowerShell</h3>
+<p>Вставь в PowerShell:</p>
+<pre class="code" data-lang="powershell"><code>irm https://claude.ai/install.ps1 | iex</code></pre>
+<p>Установщик ничего не показывает, пока скачивает. Это нормально: пустое окно само по себе ещё не означает ошибку. Дождись окончания установки, затем открой <strong>новое окно терминала</strong>.</p>
+<h3>Команда для CMD</h3>
+<p>Если у тебя CMD, используй эту строку целиком:</p>
+<pre class="code" data-lang="cmd"><code>curl -fsSL https://claude.ai/install.cmd -o install.cmd &amp;&amp; install.cmd &amp;&amp; del install.cmd</code></pre>
+<p>После окончания тоже открой новое окно терминала. Проверка для обоих способов одинаковая, она в следующем шаге.</p>
+<p>Эта установка напрямую в Windows называется нативной. <strong>Нативная установка обновляется сама в фоне.</strong> Отдельный вариант через WinGet тоже есть, но у него обновления устроены иначе.</p>
+<h3>Альтернатива: установка через WinGet</h3>
+<p>Для установки через WinGet выполни:</p>
+<pre class="code" data-lang="powershell"><code>winget install Anthropic.ClaudeCode</code></pre>
+<p><strong>Установка через WinGet сама не обновляется.</strong> Для обновления используй:</p>
+<pre class="code" data-lang="powershell"><code>winget upgrade Anthropic.ClaudeCode</code></pre>
+<h2>Шаг 3. Проверь установку Claude Code</h2>
+<p>В новом окне PowerShell или CMD введи:</p>
+<pre class="code" data-lang="text"><code>claude --version</code></pre>
+<p>В ответ должны появиться номер версии и «(Claude Code)». Это первая проверка: терминал находит установленный Claude Code. Вход в аккаунт будет следующим шагом.</p>
+<p>Для подробной диагностики установки и настроек есть отдельная команда:</p>
+<pre class="code" data-lang="text"><code>claude doctor</code></pre>
+<p>Она проверяет установку без запуска разговора с Claude.</p>
+<p>Если команда не найдена, переходи к разделу с ошибками ниже.</p>
+<h2>Шаг 4. Открой папку проекта и войди в аккаунт</h2>
+<p>Проектом может быть папка с файлами, с которыми ты собираешься работать. Перейди в неё из терминала:</p>
+<pre class="code" data-lang="text"><code>cd путь\к\проекту</code></pre>
+<p>Здесь <code>путь\к\проекту</code> нужно заменить на адрес своей папки. Это образец команды.</p>
+<p>Затем введи:</p>
+<pre class="code" data-lang="text"><code>claude</code></pre>
+<p><strong>При первом запуске вход проходит через браузер.</strong> Используй аккаунт подписки или Console. Дальше вход сохраняется.</p>
+<p>После входа начни с просьбы «объясни структуру папок» или «что делает этот проект?». Так ты сначала дашь Claude изучить файлы, а уже потом попросишь изменения. Для первой правки выбери маленькую задачу: Claude покажет правку и спросит разрешение.</p>
+<p>Если нужно сменить аккаунт, внутри Claude Code введи:</p>
+<pre class="code" data-lang="text"><code>/login</code></pre>
+<h2>Git for Windows: зачем нужен и что делать с Git Bash</h2>
+<p>Git можно представить как историю изменений проекта. Git for Windows рекомендуется для Claude Code: вместе с ним ты получаешь Git Bash, через который Claude выполняет команды Bash. Bash здесь ещё один способ давать компьютеру команды.</p>
+<p><strong>Без Git Claude Code использует PowerShell.</strong> Поэтому отсутствие Git само по себе не повод считать всю установку сломанной.</p>
+<p>Если Git Bash уже есть, но Claude его не находит, путь можно указать в настройках. На Windows они лежат в <code>%USERPROFILE%\.claude</code>, файл называется <code>settings.json</code>.</p>
+<p>В блоке <code>env</code> нужна такая запись:</p>
+<pre class="code" data-lang="json"><code>"CLAUDE_CODE_GIT_BASH_PATH": "C:\\Program Files\\Git\\bin\\bash.exe"</code></pre>
+<p>Это фрагмент настроек, <strong>не команда для PowerShell и не весь файл</strong>. Существующие настройки заменять одной строкой не нужно. Путь должен указывать на твой Git Bash. Здесь приведён путь из документации.</p>
+<h2>Три ошибки при установке Claude Code на Windows</h2>
+<h3>1. Команда claude не найдена / not recognized</h3>
+<p>По документации этот затык связан с PATH: папки установки нет в списке мест, где Windows ищет программы. PATH похож на адресную книгу. Если нужной папки там нет, по короткому имени программа не находится.</p>
+<p>Сначала проверь, что после установки открыл <strong>новое окно терминала</strong>, как указано выше. Если ошибка остаётся, нужен раздел <strong>Fix your PATH</strong> в <a href="https://code.claude.com/docs/en/overview">официальной инструкции Claude Code</a>.</p>
+<h3>2. The token '&amp;&amp;' is not a valid statement separator</h3>
+<p>Ты в PowerShell, а вставил команду для CMD. Символы <code>&amp;&amp;</code> находятся в CMD-варианте установки выше.</p>
+<p>Вернись к началу строки: если там <code>PS</code>, используй команду из блока <strong>«Команда для PowerShell»</strong>. Не нужно вручную переделывать CMD-команду или убирать из неё отдельные символы.</p>
+<h3>3. 'irm' is not recognized</h3>
+<p>Обратная ситуация: ты в CMD, а вставил команду для PowerShell.</p>
+<p>Либо останься в CMD и возьми команду из блока <strong>«Команда для CMD»</strong>, либо открой PowerShell и используй его вариант.</p>
+<h2>Нужен ли WSL для Claude Code на Windows</h2>
+<p><strong>WSL не обязателен.</strong> Можно работать напрямую в Windows. Есть и второй путь: WSL 2, то есть Linux-среда внутри Windows.</p>
+<p>Разница, которую стоит знать заранее: при нативной установке в Windows песочница не поддерживается, а в WSL 2 есть. Песочница служит для изоляции работы, как отдельная рабочая комната. Если нужна именно она, смотри вариант WSL 2.</p>
+<p>Устанавливать и запускать Claude Code в этом случае нужно <strong>внутри терминала WSL</strong>. Команда для него:</p>
+<pre class="code" data-lang="bash"><code>curl -fsSL https://claude.ai/install.sh | bash</code></pre>
+<p>Эту команду запускай только внутри WSL, а не в PowerShell.</p>
+<h2>Вариант без терминала: приложение Claude для компьютера</h2>
+<p>Если хочется начать без команд, есть приложение Claude для компьютера с вкладкой <strong>Code</strong>. Оно доступно для Windows x64 и ARM64 и уже содержит Claude Code. <strong>CLI отдельно ставить не надо.</strong> CLI здесь означает вариант, который запускают командами в терминале.</p>
+<p>Для приложения нужна платная подписка.</p>
+<h2>Что делать после установки</h2>
+<p>Начни со своей папки и небольшой задачи. Сначала попроси объяснить файлы, потом выбери одну правку. Например, вместо «почини баг» опиши проблему: «почини вход, где после неверного пароля пустой экран». Так Claude получает конкретную задачу, которую можно проверить.</p>
+<p>У нас задачи и ответы идут по-русски, русские тексты Claude Code тоже обрабатывает. Это <strong>наш опыт</strong>, а не заявление об официальной поддержке языка.</p>
+<p>Дальше переходи к статье <a href="/blog/claude-code-s-nulya/">«Claude Code с нуля: первые уроки»</a>. Там следующие шаги: задачи и проверка правок в своём проекте.</p>
+<h2>Забирай пошаговый гайд по Claude Code в боте</h2>
+<p><a href="https://t.me/MaximToshaBot?start=guidecc_site"><strong>Забирай пошаговый гайд по Claude Code в боте</strong></a>, чтобы держать инструкцию под рукой, когда сядешь разбираться со своим проектом)</p>
+<section class="faq" id="faq">
+<h2>FAQ</h2>
+<h3>Можно ли установить Claude Code на Windows без WSL?</h3>
+<p>Да. Он устанавливается напрямую в Windows через PowerShell, CMD или WinGet. WSL 2 нужен как отдельный вариант, в том числе если тебе нужна песочница: нативная установка в Windows её не поддерживает.</p>
+<h3>Какая подписка нужна для Claude Code?</h3>
+<p>Нужен Pro, Max, Team, Enterprise или аккаунт Console с оплатой API заранее. На Free Claude Code нет. Pro стоит $20 в месяц при помесячной оплате, $17 в месяц при годовой ($200 сразу).</p>
+<h3>Нужны ли права администратора для установки Claude Code?</h3>
+<p>Нет, права администратора не нужны. Для установки через PowerShell открой обычное окно и используй команду из соответствующего раздела.</p>
+<h3>Почему Windows не видит команду claude после установки?</h3>
+<p>Папки установки может не быть в PATH. После установки сначала открой новое окно терминала. Если команда всё ещё не находится, проверь PATH по разделу Fix your PATH в документации.</p>
+<h3>Обязательно ли ставить Git для Claude Code?</h3>
+<p>Git for Windows рекомендуется: он даёт Git Bash для выполнения команд Bash. Без Git Claude Code использует PowerShell. Если установленный Git Bash не находится, путь к нему можно указать в блоке env файла settings.json.</p>
+<h3>Можно ли пользоваться Claude Code без терминала?</h3>
+<p>Да, в приложении Claude для компьютера есть вкладка Code. Приложение уже содержит Claude Code, отдельно ставить CLI не надо. Нужна платная подписка.</p>
+</section>
+  </article>
+  <aside class="next">
+    <a class="cta" href="https://t.me/MaximToshaBot?start=guidecc_site">Пошаговый гайд по Claude Code в боте @MaximToshaBot</a>
+    <a class="cta ghost" href="https://t.me/aureus_ai_hub">Telegram-канал @aureus_ai_hub</a>
+  </aside>
+</main>
+<footer class="wrap">
+  <span class="tag">ADVANCING INTELLIGENCE</span>
+  AUREUS | Нейросети · <a href="https://t.me/aureus_ai_hub">t.me/aureus_ai_hub</a>
+  <nav aria-label="AUREUS | Нейросети в соцсетях">
+    <a href="https://t.me/aureus_ai_hub" rel="me">Telegram</a>
+    <a href="https://www.instagram.com/aureus_ai_hub/" rel="me">Instagram</a>
+    <a href="https://www.tiktok.com/@aureus_ai_hub" rel="me">TikTok</a>
+    <a href="https://www.youtube.com/@aureus_ai_hub" rel="me">YouTube</a>
+    <a href="https://www.threads.com/@aureus_ai_hub" rel="me">Threads</a>
+    <a href="https://t.me/MaximToshaBot?start=guidecc_site">Бот @MaximToshaBot</a>
+  </nav>
+</footer>
+<script>
+document.querySelectorAll("pre.code").forEach(function (pre) {
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "copy"; b.textContent = "Копировать";
+  b.setAttribute("aria-label", "Скопировать команду");
+  b.addEventListener("click", function () {
+    var t = pre.querySelector("code").innerText;
+    var done = function () { b.textContent = "Скопировано"; setTimeout(function () { b.textContent = "Копировать"; }, 1600); };
+    if (navigator.clipboard) { navigator.clipboard.writeText(t).then(done); }
+    else { var x = document.createElement("textarea"); x.value = t; document.body.appendChild(x); x.select(); document.execCommand("copy"); x.remove(); done(); }
+  });
+  pre.setAttribute("data-copy", "1");
+  pre.appendChild(b);
+});
+</script>
+</body>
+</html>
