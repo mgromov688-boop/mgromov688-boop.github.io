@@ -33,6 +33,16 @@ article .codebox{position:relative;margin:0 0 18px}
 article .codebox pre.code{margin:0;padding-top:46px}
 article .codebox .copy{position:absolute;top:8px;right:8px;z-index:1;font:500 13px/1 Onest,system-ui,sans-serif;color:var(--bone,#F3EEE6);background:#1A1816;border:1px solid #3a342e;border-radius:8px;padding:7px 10px;cursor:pointer}
 article .codebox .copy:hover,article .codebox .copy:focus-visible{border-color:var(--copper,#9A6A4A)}
+@media (max-width:480px){
+article .table-wrap{overflow:visible;border:0;border-radius:0}
+article .table-wrap table{min-width:0;display:block}
+article .table-wrap thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+article .table-wrap tbody,article .table-wrap tr,article .table-wrap th,article .table-wrap td{display:block;width:auto}
+article .table-wrap tr{margin:0 0 12px;background:var(--raised,#1A1816);border:1px solid #2c2824;border-radius:12px;padding:4px 0}
+article .table-wrap tbody th{font-size:17px;font-weight:600;border-bottom:1px solid #2c2824;padding:12px 16px}
+article .table-wrap td{border:0;padding:10px 16px 12px}
+article .table-wrap td::before{content:attr(data-label);display:block;font-size:13px;color:var(--champ-light,#E3BB8B);margin-bottom:4px}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -232,8 +242,8 @@ article .codebox .copy:hover,article .codebox .copy:focus-visible{border-color:v
 <table>
 <thead><tr><th scope="col">План</th><th scope="col">Цена и условия</th></tr></thead>
 <tbody>
-<tr><th scope="row">Pro</th><td>$20 в месяц при помесячной оплате, $17 в месяц при годовой ($200 сразу). Claude Code входит.</td></tr>
-<tr><th scope="row">Max</th><td>от $100 в месяц, 5x или 20x лимитов Pro; включает $100-200 в месяц кредитов API.</td></tr>
+<tr><th scope="row" data-label="План">Pro</th><td data-label="Цена и условия">$20 в месяц при помесячной оплате, $17 в месяц при годовой ($200 сразу). Claude Code входит.</td></tr>
+<tr><th scope="row" data-label="План">Max</th><td data-label="Цена и условия">от $100 в месяц, 5x или 20x лимитов Pro; включает $100-200 в месяц кредитов API.</td></tr>
 </tbody>
 </table>
 </div>
