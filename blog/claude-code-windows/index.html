@@ -29,10 +29,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
 <style>
-article pre.code{position:relative}
-article pre.code .copy{position:absolute;top:8px;right:8px;font:500 13px/1 Onest,system-ui,sans-serif;color:var(--bone,#F3EEE6);background:#1A1816;border:1px solid #3a342e;border-radius:8px;padding:7px 10px;cursor:pointer}
-article pre.code .copy:hover,article pre.code .copy:focus-visible{border-color:var(--copper,#9A6A4A)}
-article pre.code[data-copy] code{display:block;padding-right:96px}
+article .codebox{position:relative;margin:0 0 18px}
+article .codebox pre.code{margin:0;padding-top:46px}
+article .codebox .copy{position:absolute;top:8px;right:8px;z-index:1;font:500 13px/1 Onest,system-ui,sans-serif;color:var(--bone,#F3EEE6);background:#1A1816;border:1px solid #3a342e;border-radius:8px;padding:7px 10px;cursor:pointer}
+article .codebox .copy:hover,article .codebox .copy:focus-visible{border-color:var(--copper,#9A6A4A)}
 </style>
 <script type="application/ld+json">
 {
@@ -332,8 +332,11 @@ document.querySelectorAll("pre.code").forEach(function (pre) {
     if (navigator.clipboard) { navigator.clipboard.writeText(t).then(done); }
     else { var x = document.createElement("textarea"); x.value = t; document.body.appendChild(x); x.select(); document.execCommand("copy"); x.remove(); done(); }
   });
-  pre.setAttribute("data-copy", "1");
-  pre.appendChild(b);
+  var box = document.createElement("div");
+  box.className = "codebox";
+  pre.parentNode.insertBefore(box, pre);
+  box.appendChild(pre);
+  box.appendChild(b);
 });
 </script>
 </body>
